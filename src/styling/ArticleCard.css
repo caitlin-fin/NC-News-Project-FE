@@ -1,0 +1,9 @@
+.article-card {
+    background-color: rgb(224, 201, 245);
+    padding:5px;
+    padding-left:20px;
+    margin:20px;
+    height:40px;
+   display:flex;
+   align-items: center;
+}
