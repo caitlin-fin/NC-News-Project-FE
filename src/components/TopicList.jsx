@@ -17,7 +17,7 @@ function TopicList() {
       {topics.map((topic) => {
         return (
           <Link
-            to={`/articles/${topic.slug}`}
+            to={`/articles/topics/${topic.slug}`}
             key={topic.slug}
             className="topic-link"
           >
