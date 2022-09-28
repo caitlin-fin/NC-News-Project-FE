@@ -5,7 +5,6 @@ const newsApi = axios.create({
 });
 
 export const getArticles = (topic) => {
-  console.log(topic, 'in getArticles');
   return newsApi
     .get("/articles", { params: { topic: topic } })
     .then((response) => {

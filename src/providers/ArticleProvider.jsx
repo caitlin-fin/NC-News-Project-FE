@@ -1,23 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Articles from "../pages/Articles";
 import { getArticles } from "../utils/api";
 import TopicList from "../components/TopicList";
-import { useParams } from "react-router-dom";
 
-function ArticleProvider() {
-  const [articles, setArticles] = useState([]);
-  const [topic, setTopic] = useState(null);
-
+function ArticleProvider({ articles, setArticles }) {
   useEffect(() => {
-    getArticles(topic).then(({ articles }) => {
+    getArticles().then(({ articles }) => {
       setArticles(articles);
     });
-  }, [topic]);
+  }, [setArticles]);
 
   return (
     <div>
       <h1>Articles</h1>
-      <TopicList setTopic={setTopic} topic={topic} />
+      <TopicList />
       <Articles articles={articles} />
     </div>
   );

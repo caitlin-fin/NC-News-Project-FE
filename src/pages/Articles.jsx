@@ -1,8 +1,7 @@
-import { useState } from "react";
 import ArticleCard from "../components/ArticleCard";
 import "../styling/Articles.css";
 
-function Articles({ articles}) {
+function Articles({ articles }) {
   return (
     <div className="article-list">
       {articles.map((article) => {

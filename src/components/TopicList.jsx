@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { getTopics } from "../utils/api";
 
-function TopicList({ setTopic, topic }) {
+function TopicList() {
   const [topics, setTopics] = useState([]);
 
   useEffect(() => {
@@ -10,31 +11,15 @@ function TopicList({ setTopic, topic }) {
     });
   }, [topics]);
 
-  function handleClick(event) {
-    event.preventDefault();
-    setTopic(event.target.value);
-  }
   return (
     <div>
       {topics.map((topic) => {
         return (
-          <button
-            onClick={handleClick}
-            className="topic-button"
-            key={topic.slug}
-            value={topic.slug}
-          >
-            {topic.slug}
-          </button>
+          <Link to={`/articles/${topic.slug}`} key={topic.slug}>
+            <button className="topic-button">{topic.slug}</button>
+          </Link>
         );
       })}
-      <button
-        onClick={() => {
-          setTopic(null);
-        }}
-      >
-        all articles
-      </button>
     </div>
   );
 }
