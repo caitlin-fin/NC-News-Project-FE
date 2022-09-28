@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getArticles } from "../utils/api";
-import Articles from "./Articles";
+import ArticlesList from "./ArticlesList";
+import "../styling/Articles.css";
 
 function ArticlesByTopic({ articles, setArticles }) {
   const { topic_slug } = useParams();
@@ -15,10 +16,12 @@ function ArticlesByTopic({ articles, setArticles }) {
   return (
     <div>
       <h2>Articles about {topic_slug}</h2>
-      <Link to="/articles">
-        <button>Back to all articles</button>
-      </Link>
-      <Articles articles={articles} />
+      <div className="topic-nav-bar">
+        <Link to="/articles" className="topic-link">
+          Back to all articles
+        </Link>
+      </div>
+      <ArticlesList articles={articles} />
     </div>
   );
 }

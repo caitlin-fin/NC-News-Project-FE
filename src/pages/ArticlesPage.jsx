@@ -1,9 +1,10 @@
 import { useEffect } from "react";
-import Articles from "../pages/Articles";
 import { getArticles } from "../utils/api";
 import TopicList from "../components/TopicList";
+import ArticlesList from "./ArticlesList";
+import "../styling/Articles.css";
 
-function ArticleProvider({ articles, setArticles }) {
+function ArticlePage({ articles, setArticles }) {
   useEffect(() => {
     getArticles().then(({ articles }) => {
       setArticles(articles);
@@ -12,10 +13,10 @@ function ArticleProvider({ articles, setArticles }) {
 
   return (
     <div>
-      <h1>Articles</h1>
+      <h2>Articles</h2>
       <TopicList />
-      <Articles articles={articles} />
+      <ArticlesList articles={articles} />
     </div>
   );
 }
-export default ArticleProvider;
+export default ArticlePage;

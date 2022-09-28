@@ -1,7 +1,7 @@
 import ArticleCard from "../components/ArticleCard";
 import "../styling/Articles.css";
 
-function Articles({ articles }) {
+function ArticlesList({ articles }) {
   return (
     <div className="article-list">
       {articles.map((article) => {
@@ -11,4 +11,4 @@ function Articles({ articles }) {
   );
 }
 
-export default Articles;
+export default ArticlesList;

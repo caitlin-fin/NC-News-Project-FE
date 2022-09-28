@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import ArticlesByTopic from "./pages/ArticlesByTopic";
 // import "./App.css";
 import Home from "./pages/Home";
-import ArticleProvider from "./providers/ArticleProvider";
+import ArticlesPage from "./pages/ArticlesPage";
 
 function App() {
   const [articles, setArticles] = useState([]);
@@ -17,7 +17,7 @@ function App() {
         <Route
           path="/articles"
           element={
-            <ArticleProvider articles={articles} setArticles={setArticles} />
+            <ArticlesPage articles={articles} setArticles={setArticles} />
           }
         />
         <Route
