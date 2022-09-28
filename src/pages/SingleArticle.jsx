@@ -1,4 +1,4 @@
-function SingleArticle() {
+// function SingleArticle() {
 
-}
-export default SingleArticle;
+// }
+// export default SingleArticle;
