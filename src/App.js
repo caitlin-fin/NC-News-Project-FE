@@ -5,6 +5,7 @@ import ArticlesByTopic from "./pages/ArticlesByTopic";
 // import "./App.css";
 import Home from "./pages/Home";
 import ArticlesPage from "./pages/ArticlesPage";
+import SingleArticle from "./pages/SingleArticle";
 
 function App() {
   const [articles, setArticles] = useState([]);
@@ -21,10 +22,14 @@ function App() {
           }
         />
         <Route
-          path="/articles/:topic_slug"
+          path="/articles/topics/:topic_slug"
           element={
             <ArticlesByTopic articles={articles} setArticles={setArticles} />
           }
+        />
+        <Route
+          path="/articles/:article_id"
+          element={<SingleArticle />}
         />
       </Routes>
     </div>
