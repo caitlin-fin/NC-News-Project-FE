@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 // import "./App.css";
 import Home from "./pages/Home";
-import ArticleProvider from "./providers/ArticleProvider"
+import ArticleProvider from "./providers/ArticleProvider";
 
 function App() {
   return (
@@ -10,8 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/articles" element={<ArticleProvider />}>
-        </Route>
+        <Route path="/articles" element={<ArticleProvider />} />
       </Routes>
     </div>
   );

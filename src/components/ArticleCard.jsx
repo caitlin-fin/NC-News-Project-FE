@@ -1,5 +1,5 @@
 import "../styling/ArticleCard.css";
-function ArticleCard({ article }) {
+function ArticleCard({ article}) {
 
   return (
     <div className="article-card">
