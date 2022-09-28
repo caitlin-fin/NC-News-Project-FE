@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { getArticle } from "../utils/api";
 import "../styling/Articles.css";
 
-function SingleArticle({ articles }) {
+function SingleArticle() {
   const { article_id } = useParams();
   const [article, setArticle] = useState({});
 

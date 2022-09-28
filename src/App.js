@@ -29,7 +29,7 @@ function App() {
         />
         <Route
           path="/articles/:article_id"
-          element={<SingleArticle articles={articles} />}
+          element={<SingleArticle />}
         />
       </Routes>
     </div>
