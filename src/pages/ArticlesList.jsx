@@ -1,10 +1,9 @@
 import ArticleCard from "../components/ArticleCard";
-import '../styling/Articles.css'
+import "../styling/Articles.css";
 
-function Articles({ articles }) {
+function ArticlesList({ articles }) {
   return (
-    <div className='article-list'>
-      <h1>Articles</h1>
+    <div className="article-list">
       {articles.map((article) => {
         return <ArticleCard key={article.article_id} article={article} />;
       })}
@@ -12,4 +11,4 @@ function Articles({ articles }) {
   );
 }
 
-export default Articles;
+export default ArticlesList;
