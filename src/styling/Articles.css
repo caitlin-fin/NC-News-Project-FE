@@ -3,23 +3,32 @@ h2 {
 }
 
 .topic-link {
-  color: rgb(35, 0, 67);
+  color: #2b403c;
   padding: 10px;
   margin: 10px;
   text-align: center;
   display: inline-block;
   text-decoration: none;
-  background-color: rgb(239, 225, 252);
+  background-color: #cce7dc;
+  border-style: solid;
+  border-color: #2d7263;
+  border-width: 1px;
 }
 
 .topic-link:hover,
 .topic-link:active {
-  background-color: rgb(224, 200, 247);
+  background-color: #8fb9b0;
 }
 
 .topic-nav-bar {
-  margin: 10px;
-  background-color: rgb(249, 242, 255);
+  background-color: #e9f1ee;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  border-style: solid;
+  border-color: #2d7263;
+  border-width: 2px;
 }
 
 .article {
