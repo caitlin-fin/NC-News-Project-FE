@@ -30,7 +30,6 @@ function SingleArticle() {
         <p>{article.body}</p>
         <Votes
           article={article}
-          setArticle={setArticle}
           voteCount={voteCount}
           setVoteCount={setVoteCount}
         />

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BiLike, BiDislike } from "react-icons/bi";
 import { patchArticleVotes } from "../utils/api";
 
-function Votes({ article, setArticle, voteCount, setVoteCount }) {
+function Votes({ article, voteCount, setVoteCount }) {
   const [err, setErr] = useState(null);
 
   function handleLike(event) {
@@ -10,13 +10,10 @@ function Votes({ article, setArticle, voteCount, setVoteCount }) {
     setVoteCount((voteCount) => voteCount + 1);
     setErr(null);
     patchArticleVotes(article.article_id, 1)
-      .catch((err) => {
-        setVoteCount((voteCount) => voteCount - 1);
-        setErr("Something went wrong!");
-      })
-      .then((updatedArticle) => {
-        setArticle(updatedArticle);
-      });
+    .catch((err) => {
+      setVoteCount((voteCount) => voteCount - 1);
+      setErr("Something went wrong!");
+    })
   }
 
   function handleDislike(event) {
@@ -24,13 +21,10 @@ function Votes({ article, setArticle, voteCount, setVoteCount }) {
     setVoteCount((voteCount) => voteCount - 1);
     setErr(null);
     patchArticleVotes(article.article_id, -1)
-      .catch((err) => {
-        setVoteCount((voteCount) => voteCount - 1);
-        setErr("Something went wrong!");
-      })
-      .then((updatedArticle) => {
-        setArticle(updatedArticle);
-      });
+    .catch((err) => {
+      setVoteCount((voteCount) => voteCount - 1);
+      setErr("Something went wrong!");
+    })
   }
 
   if (err) return <p>{err}</p>;
