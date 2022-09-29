@@ -23,3 +23,9 @@ export const getTopics = () => {
     return response.data;
   });
 };
+
+export const patchArticleVotes = (article_id, votes) => {
+  return newsApi.patch(`/articles/${article_id}`, { inc_votes: votes }).then((response) => {
+    return response.data.article;
+  })
+};
