@@ -1,8 +1,8 @@
-@import './App.css';
+@import "./App.css";
 
 .article-card {
   padding: 5px;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   margin: 20px;
   height: 40px;
   display: flex;
@@ -13,7 +13,16 @@
   border-width: 1.5px;
 }
 
-.article-card > a{
-    color:var(--msu-green);
-    text-decoration: none;
+.topic-icon {
+  padding: 10px;
+  padding-top:15px;
+  font-size: 150%;
+  color:var(--msu-green)
+}
+
+.article-card > a {
+  color: var(--msu-green);
+  text-decoration: none;
+  padding-left:10px;
+  font-size:100%;
 }

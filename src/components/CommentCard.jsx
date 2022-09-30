@@ -3,9 +3,13 @@ import "../styling/ArticlePage.css";
 function CommentCard({ comment }) {
   return (
     <div className="comment-card">
-      <strong>{comment.author}: </strong>
-      <p>{comment.body}</p>
-      <p>{comment.votes}</p>
+      <p className="comment-body">
+        {""}
+        <strong >{comment.author}:</strong>{" "}
+        {comment.body}
+      </p>
+      {/* <p className="comment-body">{comment.body}</p> */}
+      <p className="comment-votes">{comment.votes}</p>
     </div>
   );
 }
