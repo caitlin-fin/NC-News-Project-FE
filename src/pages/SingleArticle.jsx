@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getArticle } from "../utils/api";
-import "../styling/Articles.css";
 import Votes from "../components/Votes";
+import Comments from "../components/Comments";
+import '../styling/ArticlePage.css'
 
 function SingleArticle() {
   const { article_id } = useParams();
@@ -33,6 +34,7 @@ function SingleArticle() {
           voteCount={voteCount}
           setVoteCount={setVoteCount}
         />
+        <Comments />
       </div>
     </div>
   );
