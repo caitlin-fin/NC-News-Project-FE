@@ -29,3 +29,9 @@ export const patchArticleVotes = (article_id, votes) => {
     return response.data.article;
   })
 };
+
+export const getComments = (article_id) => {
+  return newsApi.get(`/articles/${article_id}/comments`).then((response) => {
+    return response.data
+  })
+}

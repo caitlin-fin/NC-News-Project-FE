@@ -1,0 +1,11 @@
+.comment-card {
+  padding: 5px;
+  padding-left: 20px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #cce7dc;
+  border-style: solid;
+  border-color: #2d7263;
+  border-width: 1px;
+} 
