@@ -1,3 +1,63 @@
+.article {
+  border-style: solid;
+  border-color: var(--brunswick-green);
+  border-width: 2px;
+  background-color: var(--mint-cream);
+  margin: 20px;
+  max-width: 1000px;
+  color: var(--phthalo-green);
+  height: 1200px;
+  overflow: scroll;
+}
+.article > h1 {
+  margin: 20px;
+  padding: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--msu-green);
+  background-color: #b6d5c8;
+  font-size: 175%;
+}
+.article > h2,
+h3 {
+  color: var(--phthalo-green);
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: var(--aero-blue);
+  border-style: solid;
+  border-color: #2d7263;
+  border-width: 1px;
+  width: min-content;
+  align-content: center;
+}
+
+.article > p {
+  text-indent: 30px;
+  line-height: 25px;
+  text-align: justify;
+  margin: 30px;
+  border-style: solid;
+  border-color: #2d7263;
+  border-width: 1px;
+  padding: 10px;
+  background-color: var(--baby-powder);
+}
+
+.vote-button {
+  margin: 5px;
+  font-size: 25px;
+  color: var(--brunswick-green);
+
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: var(--baby-powder);
+  border-style: solid;
+  border-color: #2d7263;
+  border-width: 1.5px;
+}
+
 .comment-card {
   padding: 5px;
   padding-left: 20px;
@@ -8,4 +68,4 @@
   border-style: solid;
   border-color: #2d7263;
   border-width: 1px;
-} 
+}

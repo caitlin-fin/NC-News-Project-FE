@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BiLike, BiDislike } from "react-icons/bi";
 import { patchArticleVotes } from "../utils/api";
+import '../styling/ArticlePage.css'
 
 function Votes({ article, voteCount, setVoteCount }) {
   const [err, setErr] = useState(null);
@@ -32,8 +33,8 @@ function Votes({ article, voteCount, setVoteCount }) {
   return (
     <div className="article-votes">
       <p>Article likes: {voteCount}</p>
-      <button onClick={handleLike}>{<BiLike />}</button>
-      <button onClick={handleDislike}>{<BiDislike />}</button>
+      <button className='vote-button' onClick={handleLike}>{<BiLike />}</button>
+      <button className='vote-button' onClick={handleDislike}>{<BiDislike />}</button>
     </div>
   );
 }

@@ -6,7 +6,7 @@
     border-color:#2d7263;
     border-width:2px;
     text-align:center;
-    
+    font-size:200%;
 }
 
 nav {
@@ -21,13 +21,14 @@ nav {
 }
 
 nav > p {
-  color: #2b403c;
+  color: var(--phthalo-green);
   padding: 10px;
   margin: 10px;
   text-align: center;
-  display: inline-block;
+  /* display: inline-block; */
   text-decoration: none;
-  background-color: #b6dccc;
+  background-color: var(--aero-blue);
+  font-weight:bold;
   border-style: solid;
   border-color:#2d7263;
   border-width:1px;
@@ -40,7 +41,8 @@ nav > a {
   text-align: center;
   display: inline-block;
   text-decoration: none;
-  background-color: #c4e6d8;
+  font-weight:bold;
+  background-color: var(--aero-blue);
   border-style: solid;
   border-color:#2d7263;
   border-width:1px;
@@ -48,5 +50,5 @@ nav > a {
 
 nav > a:hover,
 a:active {
-  background-color: #8fb9b0;
+  background-color: var(--cambridge-blue);
 }
