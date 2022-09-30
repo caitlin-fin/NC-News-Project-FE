@@ -1,3 +1,16 @@
+:root {
+  --phthalo-green: #16352fff;
+  --msu-green: #183a34ff;
+  --brunswick-green: #23564cff;
+  --wintergreen-dream: #538f81ff;
+  --green-sheen: #70a597ff;
+  --cambridge-blue: #8cbbadff;
+  --aero-blue: #c4e6d8ff;
+  --honeydew: #d4eae2ff;
+  --mint-cream: #e3edebff;
+  --baby-powder: #f6fbf9ff;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap");
 
 body {
@@ -8,18 +21,22 @@ body {
 }
 
 body {
-  background-color: #e3edeb;
+  background-color: var(--mint-cream);
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2348b9a0' fill-opacity='0.35'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .App {
   border-style: solid;
-  border-color: #2d7263;
+  border-color: var(--brunswick-green);
   border-width: 3px;
-  background-color: #f6fbf9;
+  background-color: var(--baby-powder);
   margin: 50px;
   max-width: 1000px;
-  color: #183a34;
+  color: var(--phthalo-green);
   height: 1200px;
   overflow: scroll;
+}
+
+* {
+  border-radius:5px;
 }

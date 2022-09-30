@@ -19,4 +19,5 @@ function ArticlePage({ articles, setArticles }) {
     </div>
   );
 }
+
 export default ArticlePage;

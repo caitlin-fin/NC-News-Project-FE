@@ -3,25 +3,26 @@ h2 {
 }
 
 .topic-link {
-  color: #2b403c;
+  color: var(--msu-green);
   padding: 10px;
   margin: 10px;
-  text-align: center;
   display: inline-block;
+  text-align: center;
   text-decoration: none;
-  background-color: #cce7dc;
+  font-weight:bold;
+  background-color: var(--aero-blue);
   border-style: solid;
-  border-color: #2d7263;
+  border-color: var(--brunswick-green);
   border-width: 1px;
 }
 
 .topic-link:hover,
 .topic-link:active {
-  background-color: #8fb9b0;
+  background-color: var(--cambridge-blue);
 }
 
 .topic-nav-bar {
-  background-color: #e9f1ee;
+  background-color: var(--mint-cream);
   height: 60px;
   display: flex;
   align-items: center;
