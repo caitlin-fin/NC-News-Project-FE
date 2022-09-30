@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getComments } from "../utils/api";
 import CommentCard from "../components/CommentCard";
-import '../styling/ArticlePage.css'
+import "../styling/ArticlePage.css";
 
 function Comments() {
   const { article_id } = useParams();
@@ -15,7 +15,7 @@ function Comments() {
   }, [article_id]);
 
   return (
-    <div className='comments'>
+    <div className="comments">
       <h4>Comments</h4>
       {comments.map((comment) => {
         return <CommentCard key={comment.comment_id} comment={comment} />;
