@@ -32,7 +32,6 @@ export const patchArticleVotes = (article_id, votes) => {
 
 export const getComments = (article_id) => {
   return newsApi.get(`/articles/${article_id}/comments`).then((response) => {
-    // console.log(response.data, 'in getComments')
     return response.data
   })
 }
